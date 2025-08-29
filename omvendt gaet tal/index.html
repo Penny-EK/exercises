@@ -8,13 +8,15 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <h1>gæt et tal</h1>
-    <label for="inputBox"> hvis du har svært ved at huske så kan du skrive dit tal her:</label>
-    <input type="number" id="inputBox" />
-    <div id="computerGuess"><h2></h2></div>
-    <button onclick="makeGuess()">start spillet</button>
-    <button onclick="lower()">For højt</button>
-    <button onclick="higher()">for lavt</button>
-    <button onclick="correct()">du gættede det</button>
+    <main>
+      <h1>gæt et tal</h1>
+      <label for="inputBox"> hvis du har svært ved at huske så kan du skrive dit tal her:</label>
+      <input type="number" id="inputBox" />
+      <div id="computerGuess"></div>
+      <button onclick="makeGuess()">start spillet</button>
+      <button onclick="lower()">For højt</button>
+      <button onclick="higher()">for lavt</button>
+      <button onclick="correct()">du gættede det</button>
+    </main>
   </body>
 </html>

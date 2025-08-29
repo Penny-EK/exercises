@@ -1,18 +1,21 @@
 let max = 100;
 let min = 0;
 let guess;
-let numberOfGuesses;
+let numberOfGuesses = 0;
 let guessedNumber;
 
 function start() {
   console.log("start");
-  guessNumber();
+  numberOfGuesses = 0;
+  makeGuess();
 }
 
 function makeGuess() {
   guessedNumber = Math.floor((min + max) / 2);
   console.log(guessedNumber);
   document.querySelector("#computerGuess").textContent = guessedNumber;
+  numberOfGuesses++;
+  console.log("antal gæt " + numberOfGuesses);
 }
 
 function higher() {
@@ -28,7 +31,9 @@ function lower() {
 
 function correct() {
   console.log("computer guessed it!");
-  document.querySelector("#computerGuess").textContent = "Jeg gættede det!";
+  document.querySelector("#computerGuess").textContent = "Jeg gættede det! det tog kun " + numberOfGuesses + " forsøg💪🏻 ";
 }
 
 function guessCounter() {}
+
+function reset() {}
