@@ -1,0 +1,72 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  padding: 2rem;
+  color: #333;
+}
+
+/* --- Table --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #4caf50;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+tbody tr:hover {
+  background: #eafaea;
+}
+
+/* --- Buttons --- */
+button {
+  margin: 0.3rem;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background: #3d8b40;
+  transform: translateY(0);
+}
+
+/* --- Active filter button --- */
+button.active {
+  background: #2e7031;
+}
