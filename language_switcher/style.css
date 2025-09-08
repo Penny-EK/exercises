@@ -1,0 +1,59 @@
+/* Reset for consistent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.switcher {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.switcher:hover {
+  border-color: #4a90e2;
+}
+
+/* Content styling */
+p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #222;
+  color: #f1f1f1;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-top: 30px;
+}
