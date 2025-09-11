@@ -1,0 +1,50 @@
+html {
+  --buttonColor: #222222;
+  --highlight: #e4c8f7;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+button {
+  padding: 20px 10px;
+  background-color: var(--buttonColor);
+  color: white;
+  border-style: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+img {
+  aspect-ratio: 16/9;
+  width: 85vw;
+  object-fit: cover;
+}
+
+.tid {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.tid::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: var(--highlight);
+  z-index: -1;
+  animation: tid_kf 10s linear forwards;
+}
+
+@keyframes tid_kf {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
