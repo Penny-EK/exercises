@@ -16,6 +16,7 @@ function start() {
   console.log("ready");
 
   // TODO: Add event-listeners to filter and sort buttons
+
   const buttons = document.querySelectorAll(".filter");
 
   buttons.forEach((button) => {
@@ -41,7 +42,8 @@ function prepareObjects(jsonData) {
   allAnimals = jsonData.map(preapareObject);
 
   // TODO: This might not be the function we want to call first
-  filterList("*");
+  //
+  displayList(allAnimals);
 }
 
 function preapareObject(jsonObject) {
