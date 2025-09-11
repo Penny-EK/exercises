@@ -1,0 +1,7 @@
+html {
+  --lightness: 100%;
+  --saturation: 100%;
+}
+body {
+  background-color: hsl(182 var(--saturation) var(--lightness));
+}
